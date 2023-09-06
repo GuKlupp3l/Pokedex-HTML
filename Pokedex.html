@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeDex</title>
+
+    
+</head>
+<body>
+
+    <header class="grupo-cabec-cima">  
+        <div class="cabec-1"></div>
+        <div class="btn-redondo"></div>
+    </header><!--FIM DO CABEÇ-->
+   
+    <div class="menu-container">
+        <button class="btn-redondo" id="btn-redondo">Menu</button>
+        <ul id="menu" class="esconder">
+            <li><a href="#" class="a-menu" > <b>Pagina Inicial</b> </a>   </li>
+            <li ><a href="Pokemon.html" class="a-menu"> <b>Pokemons</b> </a>  </li>
+            <li> <a  href="#" class="a-menu">  <b>Pokebolas</b> </a>   </li>
+            <li> <a  href="#" class="a-menu"> <b>----</b> </a>  </li>
+            
+        </ul>
+    </div>
+
+  
+
+
+    <div class="tela-meio">
+        <div class="boxPoke">
+            <div>
+                <button onclick="alterarImagem(1)" class="btn-tela-dir" style="position: fixed; top: 45%;right: 97px;height: 60px; width: 30px;"> > </button>
+                <img src="IMG/Pokes/poke001.png" id="pokeImagem" alt="Pokemon" class="pokeImagem">
+                <button onclick="alterarImagem(-1)" class="btn-tela-esq" style="position: fixed; top:45%;left: 97px; height: 60px; width: 30px;"> &lt; </button> 
+            </div>
+        </div>
+    
+    </div>
+
+
+
+
+    <div class="pokebola-logo" >
+        <img src="img/pokebola-logo.png" id="pokebola-logo" alt="Pokebola">
+    </div>
+ 
+        <div class="rodape">
+            <p id="NomePoke" class="p">Nome: </p>
+            <p id="PokeDex" class="p" style="display: flex; right: 37%;">Pokedex:</p>
+        </div>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
